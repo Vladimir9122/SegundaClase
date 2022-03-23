@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------------*/
+
+.tittle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: -0.02em;
+    color: #EBEEF5;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.comment {
+    color: #8E95A9;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.text-items {
+    margin-top: 2%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    color: #767E94;
+    margin-left: 4%;
+}
+
+small {
+    font-size: 1rem;
+}
+
+.tittle,
+.comment {
+    margin-left: 4%;
+}

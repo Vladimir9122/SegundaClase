@@ -1,0 +1,14 @@
+<div>
+    <p class="comment">PelisUP!</p>
+    <h1 class="tittle">Películas</h1>
+    <app-searcher (varSearch)="searchMovie($event)" [text]="'Buscar películas'"></app-searcher>
+
+</div>
+
+<h2 class="d-block text-items"><small>{{count()}} items</small></h2>
+
+<div class="galeria d-flex justify-content-center flex-wrap">
+    <ng-container *ngFor="let movie of movies_show">
+        <app-card [movie_serie]="movie" [media_type]="'movie'"></app-card>
+    </ng-container>
+</div>

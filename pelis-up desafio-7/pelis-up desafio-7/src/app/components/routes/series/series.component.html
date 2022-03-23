@@ -1,0 +1,14 @@
+<div>
+    <p class="comment">PelisUP!</p>
+    <h1 class="tittle">Series</h1>
+    <app-searcher (varSearch)="searchSerie($event)" [text]="'Buscar series'"></app-searcher>
+
+</div>
+
+<h2 class="d-block text-items"><small>{{count()}} items</small></h2>
+
+<div class="galeria d-flex justify-content-center flex-wrap">
+    <ng-container *ngFor="let serie of series_show">
+        <app-card [movie_serie]="serie" [media_type]="'tv'"></app-card>
+    </ng-container>
+</div>

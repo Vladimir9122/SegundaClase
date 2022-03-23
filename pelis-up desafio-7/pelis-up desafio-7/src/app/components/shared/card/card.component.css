@@ -1,0 +1,58 @@
+.cards {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 8px 16px;
+    width: 282px;
+    height: 480px;
+    left: 0px;
+    top: 0px;
+    background: rgba(32, 40, 62, 0.8);
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+
+.rating {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 4px 8px;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    color: #FFAD49;
+}
+
+.name {
+    left: 8px;
+    top: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #EBEEF5;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.portada {
+    height: 400px;
+    width: 266px;
+    left: 0px;
+    top: 0px;
+    border-radius: 8px;
+}
+
+.tittle,
+.comment,
+.searchBox,
+.tab {
+    margin-left: 4%;
+}

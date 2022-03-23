@@ -1,0 +1,33 @@
+<form (ngSubmit)="login()" autocomplete="off" [formGroup]="miFormulario">
+    <div class="row align-items-stretch">
+        <div class="col-md-6 imagen-login d-flex justify-content-center">
+            <img class="" src="../../../../assets/img/Saly-11.png" alt="">
+        </div>
+        <div class="col-md-6">
+            <h1>Ingresar</h1>
+            <div class="form-group mb-3">
+                <input class="input-email form-control" formControlName="email" type="email" placeholder="Email">
+                <span class="form-text text-danger" *ngIf="campoEsValido('email')">
+                    Debe ingresar un email
+                  </span>
+            </div>
+
+            <div class="form-group mb-3">
+                <input class="input-password form-control" formControlName="password" type="password" placeholder="Contraseña">
+                <span class="form-text text-danger" *ngIf="campoEsValido('password')">
+                    La contraseña debe contener al menos 6 caracteres
+                  </span>
+            </div>
+
+            <div class="form-group text-center">
+                <button class="btn-ingresar btn btn-primary form-control" type="submit">Ingresar</button>
+
+                <p>ó</p>
+
+                <button class="login" type="button" (click)="loginWithGoogle()"></button>
+
+            </div>
+        </div>
+    </div>
+
+</form>

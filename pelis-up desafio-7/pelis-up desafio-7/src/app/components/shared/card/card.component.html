@@ -1,0 +1,6 @@
+<div class="cards">
+    <p class="rating"><i class="far fa-star"></i> {{movie_serie.vote_average}}</p>
+    <img class="portada" src="{{url}}{{movie_serie.poster_path}}" alt="portada">
+
+    <p class="name" *ngIf="movie_serie.title !== ''">{{getTitle()}}</p>
+</div>

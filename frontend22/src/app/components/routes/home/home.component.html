@@ -1,0 +1,21 @@
+<div>
+    <h1 class="tittle">PelisUP!</h1>
+    <p class="comment">Plataforma para ver películas y series 😉</p>
+
+    <app-searcher (varSearch)="searchMovieOrSerie($event)" [text]="'Buscar películas y series'"></app-searcher>
+
+    <div class="tab">
+        <button (click)="getTrending()" [ngClass]="{'activo': item=='Todo'}" class="btn item-tab">Todos</button>
+        <button (click)="getMovies()" [ngClass]="{'activo': item=='Películas'}" class="btn item-tab">Películas</button>
+        <button (click)="getSeries()" [ngClass]="{'activo': item=='Series'}" class="btn item-tab">Series</button>
+    </div>
+
+</div>
+
+<h2 class="d-block text-filtro">{{item}} <small>({{count()}})</small></h2>
+
+<div class="galeria d-flex justify-content-center flex-wrap">
+    <ng-container *ngFor="let movie_serie of movies_series_show">
+        <app-card [movie_serie]="movie_serie" [media_type]="media_type"></app-card>
+    </ng-container>
+</div>

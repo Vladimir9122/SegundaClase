@@ -1,0 +1,81 @@
+/*--------------------------------------------------------------------*/
+
+.tittle {
+    margin-top: 8%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: -0.02em;
+    color: #EBEEF5;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.comment {
+    color: #8E95A9;
+    font-size: 16px;
+}
+
+
+/*--------------------------------Categorias------------------------------------*/
+
+.tab {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 8px;
+    width: 344px;
+    height: 56px;
+    left: 120px;
+    top: 47px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(80px);
+    border-radius: 12px;
+    margin-top: 5%;
+}
+
+.item-tab {
+    letter-spacing: 0.02em;
+    color: #8E95A9;
+}
+
+.item-tab:hover {
+    color: #EBE9FE;
+    cursor: pointer;
+}
+
+.activo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    left: 8px;
+    top: 8px;
+    background: #7B6EF6;
+    border-radius: 8px;
+    color: #EBE9FE;
+}
+
+.text-filtro {
+    margin-top: 2%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    color: #767E94;
+    margin-left: 4%;
+}
+
+.text-filtro small {
+    font-size: 1rem;
+}
+
+.tittle,
+.comment,
+.tab {
+    margin-left: 4%;
+}

@@ -1,0 +1,35 @@
+/*-----------------------------------Header---------------------------------*/
+
+.my-navbar {
+    background: #121829;
+    /* height: 80px; */
+    padding-right: 5%;
+}
+
+.link-logo {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    left: 5%;
+    top: 10%;
+    bottom: 10%;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+}
+
+.nav-link:hover {
+    color: #EBE9FE;
+}
+
+.fa-arrow-right {
+    font-size: small;
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-nav {
+        margin-top: 20px;
+    }
+}
